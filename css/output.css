@@ -194,6 +194,30 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .col-start-1 {
+    grid-column-start: 1;
+  }
+  .col-start-3 {
+    grid-column-start: 3;
+  }
+  .col-start-4 {
+    grid-column-start: 4;
+  }
+  .col-end-3 {
+    grid-column-end: 3;
+  }
+  .row-start-1 {
+    grid-row-start: 1;
+  }
+  .row-start-2 {
+    grid-row-start: 2;
+  }
+  .row-start-4 {
+    grid-row-start: 4;
+  }
+  .row-end-4 {
+    grid-row-end: 4;
+  }
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
@@ -230,6 +254,9 @@
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-18 {
     height: calc(var(--spacing) * 18);
   }
@@ -257,6 +284,9 @@
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-auto {
     width: auto;
   }
@@ -278,14 +308,23 @@
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+  .grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
   .flex-row {
     flex-direction: row;
+  }
+  .items-center {
+    align-items: center;
   }
   .justify-around {
     justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .justify-evenly {
     justify-content: space-evenly;
@@ -319,17 +358,20 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-\[\#E1EAF7\] {
+    border-color: #E1EAF7;
+  }
   .border-\[\#E2E8F0\] {
     border-color: #E2E8F0;
-  }
-  .bg-\[\#3495f6\] {
-    background-color: #3495f6;
   }
   .bg-\[\#4338CA\] {
     background-color: #4338CA;
   }
   .bg-\[\#F8FAFC\] {
     background-color: #F8FAFC;
+  }
+  .bg-\[\#FFFFFF\] {
+    background-color: #FFFFFF;
   }
   .bg-amber-300 {
     background-color: var(--color-amber-300);
@@ -343,6 +385,9 @@
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
   }
+  .pl-1 {
+    padding-left: var(--spacing);
+  }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
   }
@@ -352,6 +397,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-\[\#4338CA\] {
+    color: #4338CA;
   }
   .underline {
     text-decoration-line: underline;
