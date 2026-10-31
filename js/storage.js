@@ -1,1 +1,1 @@
-export let data = JSON.parse(localStorage.getItem('dataProduits'))
+export let data = JSON.parse(localStorage.getItem('slaa'))
